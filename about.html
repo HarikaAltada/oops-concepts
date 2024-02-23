@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>java</title>
+  </head>
+   <body>
+    <nav id="navbar">
+      <header>OOPS in Java</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Object_Oriented_Programming_Concept_in_Java">Object Oriented Programming Concept in Java</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Why_Java_is_not_a_purely_OOPs">Why Java is not a purely OOPs</a>
+            </li>
+          <li>
+            <a class="nav-link" href="#Classes_and_Objects_in_Java">Classes and Objects in Java</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Four_Main_OOPs_Concepts_in_Java">Four Main OOPs Concepts in Java</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Inheritance">Inheritance</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#Abstraction_in_Java">Abstraction in Java</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#Encapsulation_in_Java">Encapsulation in Java</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#Polymorphism_in_Java">Polymorphism in Java</a>
+                    </li>
+                    <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+                 </li>    
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Object_Oriented_Programming_Concept_in_Java">
+         <header>Object Oriented Programming Concept in Java</header>
+         <p>As the name suggests, Object-Oriented Programming or OOPs refers to languages that use objects in programming, they use objects as a primary source to implement what is to happen in the code. Objects are seen by the viewer or user, performing tasks assigned by you. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism etc. in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function</p>
+         <p>OOPS concepts are as follows</p>
+         <ol>
+           <li>Class</li>
+           <li>Object</li>
+           <li>Method ans method Passing</li>
+           <li>pillars of OOPs
+             <ul>
+               <li>Abstraction</li>
+               <li>Encapsulation</li>
+               <li>Inheritance</li>
+               <li>Polymorphism
+                <ul>
+                   <li>compile-time Polymorphism</li>
+                   <li>Runtime polymorphism</li>
+                   </ul>
+                   </li>
+                   </ul>
+               </ol>
+           <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190717114649/Object-Oriented-Programming-Concepts.jpg" alt="oops-concepts" height="200" width="200" class="image">
+           <p>A class is a user-defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. Using classes, you can create multiple objects with the same behavior instead of writing their code multiple times. This includes classes for objects occurring more than once in your code. In general, class declarations can include these components in order:</p>
+           <ol>
+             <li><strong>Modifiers</strong>: A class can be public or have default access </li>
+             <li><strong>Class name</strong>: The class name should begin with the initial letter capitalized by convention</li>
+<li><strong>Superclass (if any)</strong>: The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.</li>
+<li><strong>Interfaces (if any)</strong>: A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.</li>
+<li><strong>Body</strong>: The class body is surrounded by braces,{}.</li>
+             </ol>
+             <p><strong>An object</strong> is a basic unit of Object-Oriented Programming that represents real-life entities. A typical Java program creates many objects, which as you know, interact by invoking methods. The objects are what perform your code, they are the part of your code visible to the viewer/user. An object mainly consists of: </p>
+             <ol>
+               <li><strong>State</strong>: It is represented by the attributes of an object. It also reflects the properties of an object.</li>
+               <li><strong>Behavior</strong>: It is represented by the methods of an object. It also reflects the response of an object to other objects.</li>
+               <li><strong>Identity</strong>: It is a unique name given to an object that enables it to interact with other objects.</li>
+               <li><strong>Method</strong>:A method is a collection of statements that perform some specific task and return the result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping it, which is why they are considered time savers. In Java, every method must be part of some class, which is different from languages like C, C++, and Python. </li>
+               </ol>
+               <h4>class and objects one simple java program :</h4>
+               <pre>
+                 <code>
+   public class GFG { 
+      
+    static String Employee_name; 
+    static float Employee_salary; 
+  
+    static void set(String n, float p) { 
+        Employee_name  = n; 
+        Employee_salary  = p; 
+    } 
+  
+    static void get() { 
+        System.out.println("Employee name is: " +Employee_name ); 
+        System.out.println("Employee CTC is: " + Employee_salary); 
+    } 
+  
+    public static void main(String args[]) { 
+        GFG.set("Rathod Avinash", 10000.0f); 
+        GFG.get(); 
+    } 
+} 
+                   </code>
+                 </pre>
+          </section>
+          <section class="main-section" id="Why_Java_is_not_a_purely_OOPs">
+     <header>Why Java is not a purely OOPs</header>
+            <p>Pure Object Oriented Language or Complete Object Oriented Language are Fully Object Oriented Language which supports or have features which treats everything inside program as objects. It doesn’t support primitive datatype(like int, char, float, bool, etc.). There are seven qualities to be satisfied for a programming language to be pure Object Oriented. They are:</p>
+<ol>
+<li>Encapsulation/Data Hiding</li>
+<li>Inheritance</li>
+<li>Polymorphism</li>
+<li>Abstraction</li>
+<li>All predefined types are objects,</li>
+<li>All user defined types are objects</li>
+<li>All operations performed on objects must be only through methods exposed at the objects.</li>
+</ol>
+<br>
+<h4>Why Java is not a Pure Object Oriented Language?</h4>
+<p> Java language is not a Pure Object Oriented Language as it contain these properties:</p>
+<ul>
+  <li><strong>Primitive Data Type ex. int, long, bool, float, char, etc as Objects</strong>: Smalltalk is a “pure” object-oriented programming language unlike Java and C++ as there is no difference between values which are objects and values which are primitive types. In Smalltalk, primitive values such as integers, booleans and characters are also objects. In Java, we have predefined types as non-objects (primitive types).</li>
+  </ul>
+  <pre>
+  <code>
+    int a = 5;
+    System.out.print(a);
+    </code>
+    </pre>
+    <ul>
+    <li><strong>The static keyword</strong>:  When we declares a class as static then it can be used without the use of an object in Java. If we are using static function or static variable then we can’t call that function or variable by using dot(.) or class object defying object oriented feature.</li>
+    <li><strong>Wrapper Class</strong>: Wrapper class provides the mechanism to convert primitive into object and object into primitive. In Java, you can use Integer, Float etc. instead of int, float etc. We can communicate with objects without calling their methods. ex. using arithmetic operators.</li>
+    </ul>
+    <pre>
+    <code>
+      String s1 = "ABC" + "A" ;
+      </code>
+      </pre>
+      <ul>
+      <li>Even using Wrapper classes does not make Java a pure OOP language, as internally it will use the operations like Unboxing and Autoboxing. So if you create Integer instead of int and do any mathematical operation on it, under the hoods Java is going to use primitive type int only.</li>
+    </ul>
+    <pre>
+    <code>
+   public class BoxingExample 
+   {
+    public static void main(String[] args) 
+    {
+            Integer i = new Integer(10);
+            Integer j = new Integer(20);
+            Integer k = new Integer(i.intValue() + j.intValue());
+            System.out.println("Output: "+ k);
+    }
+}
+</code>
+</pre>
+<ul>
+<li>In the above code, there are 2 problems where Java fails to work as pure OOP:
+  <ol>
+<li>While creating Integer class you are using primitive type “int” i.e. numbers 10, 20.</li>
+<li>While doing addition Java is using primitive type “int”.</li>
+</ol>
+</li>
+</ul>
+  </section>
+  <section class="main-section" id="Classes_and_Objects_in_Java">
+<header>Classes and Objects in Java</header>
+<h3>Java Classes</h3>
+<p>A class in Java is a set of objects which shares common characteristics/ behavior and common properties/ attributes. It is a user-defined blueprint or prototype from which objects are created. For example, Student is a class while a particular student named Ravi is an object.</p>
+<h4>Properties of Java Classes</h4>  
+<br>          
+<ol>
+  <li>Class is not a real-world entity. It is just a template or blueprint or prototype from which objects are created.</li>
+<li>Class is a group of variables of different data types and a group of methods.</li>
+<li>A Class in Java can contain:
+  <ul>
+<li>Data member</li>
+<li>Method</li>
+<li>Constructor</li>
+<li>Nested Class</li>
+<li>Interface</li>
+</ul>
+</li>
+</ol>
+<h4>Class Declaration in Java</h4>
+<pre>
+  <code>
+<i>
+<em>access_modifier</em></i><span> </span><b><strong>class </strong></b><span>&lt;</span><i><em>class_name</em></i><span>&gt;
+{  
+    data member;  
+    method;  
+    constructor;
+    nested class;
+    interface;
+}
+</span>
+</code>
+</pre>
+  <h4>Example of Java Class</h4>
+  <pre>
+    <code>
+    class Student {
+    // data member (also instance variable)
+    int id;
+    // data member (also instance variable)
+    String name;
+ 
+    public static void main(String args[])
+    {
+        // creating an object of
+        // Student
+        Student s1 = new Student();
+        System.out.println(s1.id);
+        System.out.println(s1.name);
+    }
+}
+      </code>
+    </pre>
+    <h3>Java Objects</h3>
+<p>An object in Java is a basic unit of Object-Oriented Programming and represents real-life entities. Objects are the instances of a class that are created to use the attributes and methods of a class.  A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of :</p>
+<ol>
+<li><strong>State</strong>:It is represented by attributes of an object. It also reflects the properties of an object.</li>
+<li><strong>Behavior</strong>: It is represented by the methods of an object. It also reflects the response of an object with other objects.</li>
+<li><strong>Identity</strong>: It gives a unique name to an object and enables one object to interact with other objects.</li>
+  </ol>
+  <br>
+  <h4>Ways to Create an Object of a Class</h4>
+   <p>There are four ways to create objects in Java. Strictly speaking, there is only one way(by using a new keyword), and the rest internally use a new keyword.</p>
+   <div><Strong>1. Using new keyword</strong><p>
+It is the most common and general way to create an object in Java.</p>
+<h5>Example</h5>
+<pre>
+  <code>
+    //creating object of class Test
+     Test t = new Test();
+  </code>
+  </pre>
+ <strong>2. Using Class.forName(String className) method</strong>
+ <p>There is a pre-defined class in java.lang package with name Class. The forName(String className) method returns the Class object associated with the class with the given string name. We have to give a fully qualified name for a class. On calling the new Instance() method on this Class object returns a new instance of the class with the given string name.</p>
+ <pre>
+   <code>
+   // creating object of public class Test
+   // consider class Test present in com.p1 package
+   Test obj = (Test)Class.forName("com.p1.Test").newInstance();
+
+</code>
+</pre>
+<strong>4. Deserialization</strong><p>De-serialization is a technique of reading an object from the saved state in a file</p>
+<pre>
+  <code>
+   FileInputStream file = new FileInputStream(filename);
+   ObjectInputStream in = new ObjectInputStream(file);
+   Object obj = in.readObject();
+
+</code>
+</pre>
+   </div>
+</section>
+<section class="main-section" id="Four_Main_OOPs_Concepts_in_Java">
+  <header>Four Main OOPs Concepts in Java</header>
+ <p>Object-oriented programming generally referred to as OOPS is the backbone of java as java is not a purely object oriented language but it is object oriented language. Java organizes a program around the various objects and well-defined interfaces. There are four pillars been here in OOPS which are listed below.</p>
+ <h4>These concepts aim to implement real-world entities in programs.</h4>
+<ul>
+<li>Abstraction</li>
+<li>Encapsulation</li>
+<li>Inheritance</li>
+<li>Polymorphism</li>
+</ul>
+ <p> Certain key points should be remembered regarding this pillar of OOPS as follows:</p>
+<ul>
+<li>The class should be abstract if a class has one or many abstract methods.</li>
+<li>An abstract class can have constructors, concrete methods, static method, and final method</li>
+<li>Abstract class can’t be instantiated directly with the new operator. It can be possible as shown in pre tag below:</li>
+</ul>
+<pre>
+<code>
+     A b = new B();
+
+</code>
+</pre>
+<ul>
+<li>The child class should override all the abstract methods of parent else the child class should be declared with abstract keyword</li>
+</ul>
+</section>
+  <section class="main-section" id="Inheritance">
+  <header>Inheritance</header>
+  <p>Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.</p>
+  <h4>How to Use Inheritance in Java?</h4>
+ <p> The extends keyword is used for inheritance in Java. Using the extends keyword indicates you are derived from an existing class. In other words, “extends” refers to increased functionality.</p>
+ <h4>Syntax:</h4>
+ <pre>
+    <code>
+    class derived-class extends base-class  
+    {  
+   //methods and fields  
+    }  
+</code>
+</pre>
+<h4>Java Inheritance Types</h4>
+<p>Below are the different types of inheritance which are supported by Java.</p>
+<ol>
+<li>Single Inheritance</li>
+<li>Multilevel Inheritance</li>
+<li>Hierarchical Inheritance</li>
+<li>Multiple Inheritance</li>
+<li>Hybrid Inheritance</li>
+</ol>
+<br>
+<div>
+<strong>1. Single Inheritance</strong>
+<p>In single inheritance, subclasses inherit the features of one superclass</p>
+<strong>2. Multilevel Inheritance</strong>
+<p>In Multilevel Inheritance, a derived class will be inheriting a base class, and as well as the derived class also acts as the base class for other classes.</p>
+<strong>3. Hierarchical Inheritance</strong>
+<p>In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass.</p>
+<strong>4. Multiple Inheritance</strong>
+<p>In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. Please note that Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces.</p>
+</div>
+</section>
+    <section class="main-section" id="Abstraction_in_Java">
+      <header>Abstraction in Java</header>
+    <p>Abstraction in Java is the process in which we only show essential details/functionality to the user. The non-essential implementation details are not displayed to the user.</p>
+    <h4>Advantages of Abstraction</h4>
+<p>Here are some advantages of abstraction:</p>
+<ol>
+<li>It reduces the complexity of viewing things.</li>
+<li>Avoids code duplication and increases reusability.</li>
+<li>Helps to increase the security of an application or program as only essential details are provided to the user.</li>
+<li>It improves the maintainability of the application.</li>
+<li>It improves the modularity of the application.</li>
+<li>The enhancement will become very easy because without affecting end-users we can able to perform any type of changes in our internal system.</li>
+<li>Improves code reusability and maintainability.</li>
+<li>Hides implementation details and exposes only relevant information.</li>
+<li>Provides a clear and simple interface to the user.</li>
+<li>Increases security by preventing access to internal class details.</li>
+</ol>
+<br>
+<h4>Disadvantages of Abstraction in Java</h4>
+<p>Here are the main disadvantages of abstraction in Java:</p>
+<ol>
+<li>Abstraction can make it more difficult to understand how the system works.</li>
+<li>It can lead to increased complexity, especially if not used properly.</li>
+<li>This may limit the flexibility of the implementation.</li>
+<li>Abstraction can add unnecessary complexity to code if not used appropriately, leading to increased development time and effort.</li>
+<li>Abstraction can make it harder to debug and understand code, particularly for those unfamiliar with the abstraction layers and implementation details.</li>
+<li>Overuse of abstraction can result in decreased performance due to the additional layers of code and indirection.</li>
+</ol>
+      </section>
+      <section class="main-section" id="Encapsulation_in_Java">
+       <header>Encapsulation in Java</header>
+  <p>Encapsulation in Java is a fundamental concept in object-oriented programming (OOP) that refers to the bundling of data and methods that operate on that data within a single unit, which is called a class in Java. Java Encapsulation is a way of hiding the implementation details of a class from outside access and only exposing a public interface that can be used to interact with the class.</p>
+<p>
+In Java, encapsulation is achieved by declaring the instance variables of a class as private, which means they can only be accessed within the class. To allow outside access to the instance variables, public methods called getters and setters are defined, which are used to retrieve and modify the values of the instance variables, respectively. By using getters and setters, the class can enforce its own data validation rules and ensure that its internal state remains consistent.</p>
+<h4>Advantages of Encapsulation</h4>
+<br>
+<ul>
+<li><strong>Data Hiding</strong>: it is a way of restricting the access of our data members by hiding the implementation details. Encapsulation also provides a way for data hiding. The user will have no idea about the inner implementation of the class. It will not be visible to the user how the class is storing values in the variables. The user will only know that we are passing the values to a setter method and variables are getting initialized with that value.</li>
+<li><strong>Increased Flexibility</strong>: We can make the variables of the class read-only or write-only depending on our requirements. If we wish to make the variables read-only then we have to omit the setter methods like setName(), setAge(), etc. from the above program or if we wish to make the variables write-only then we have to omit the get methods like getName(), getAge(), etc. from the above program</li>
+<li><strong>Reusability</strong>: Encapsulation also improves the re-usability and is easy to change with new requirements.
+Testing code is easy: Encapsulated code is easy to test for unit testing.</li>
+<li><strong>Freedom to programmer in implementing the details of the system</strong>: This is one of the major advantage of encapsulation that it gives the programmer freedom in implementing the details of a system. The only constraint on the programmer is to maintain the abstract interface that outsiders see.</li>
+</ul>
+<br>
+<h4>Disadvantages of Encapsulation in Java</h4>
+<br>
+<ul>
+<li>Can lead to increased complexity, especially if not used properly.</li>
+<li>Can make it more difficult to understand how the system works.</li>
+<li>May limit the flexibility of the implementation.</li>
+</ul>
+        </section>
+        <section class="main-section" id="Polymorphism_in_Java">
+          <header>Polymorphism in Java</header>
+<p>Polymorphism is considered one of the important features of Object-Oriented Programming. Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.</p>
+<h4>Types of Java Polymorphism</h4>
+<p>In Java Polymorphism is mainly divided into two types:</p>
+<ul>
+<li>Compile-time Polymorphism</li>
+<li>Runtime Polymorphism</li>
+</ul>
+<br>
+<h4>Compile-Time Polymorphism in Java</h4>
+<p>It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading.</p> 
+<h4>Method Overloading</h4>
+<p>When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments.</p>
+<h4>Runtime Polymorphism in Java</h4>
+<p>It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.</p>
+<h4>Advantages of Polymorphism in Java</h4>
+<br>
+<ol>
+<li>Increases code reusability by allowing objects of different classes to be treated as objects of a common class.</li>
+<li>Improves readability and maintainability of code by reducing the amount of code that needs to be written and maintained.</li>
+<li>Supports dynamic binding, enabling the correct method to be called at runtime, based on the actual class of the object.</li>
+<li>Enables objects to be treated as a single type, making it easier to write generic code that can handle objects of different types.</li>
+</ol>
+<br>
+<h4>Disadvantages of Polymorphism in Java</h4>
+<br>
+<ol>
+<li>Can make it more difficult to understand the behavior of an object, especially if the code is complex.</li>
+<li>This may lead to performance issues, as polymorphic behavior may require additional computations at runtime.</li>
+</ol>
+          </section>
+          <section class="main-section" id="Reference">
+            <header>Reference</header>
+<p>In Java, ‘this’ is a reference variable that refers to the current object, or can be said “this” in Java is a keyword that refers to the current object instance. It can be used to call current class methods and fields, to pass an instance of the current class as a parameter, and to differentiate between the local and instance variables. Using “this” reference can improve code readability and reduce naming conflicts.</p>
+<h4>Methods to use ‘this’ in Java</h4>
+<p>Following are the ways to use the ‘this’ keyword in Java mentioned below:</p>
+<ul>
+<li>Using the ‘this’ keyword to refer to current class instance variables.</li>
+<li>Using this() to invoke the current class constructor</li>
+<li>Using ‘this’ keyword to return the current class instance</li>
+<li>Using ‘this’ keyword as the method parameter</li>
+<li>Using ‘this’ keyword to invoke the current class method.</li>
+<li>Using ‘this’ keyword as an argument in the constructor call.</li>
+</ul>
+            </section>
+        </main>
+    </body>
+    </html>
